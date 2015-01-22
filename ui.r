@@ -18,8 +18,8 @@
 shinyUI( 
 
 	fluidPage(theme = "cyborg.css",
-		titlePanel("",windowTitle="Gondar goes Shiny"),
-		HTML("<div class='well'><img src='walk.png' height=16>&nbsp;&nbsp;Gondar's Way</div>"),
+		titlePanel("",windowTitle="Shiny World Map"),
+		HTML("<div class='well'><img src='walk.png' height=16>&nbsp;&nbsp;Shiny World Map</div>"),
 		navlistPanel(HTML("View</br></br>"),widths=c(2,10),
 			
 			# tab 1 named Map: map visualisations
@@ -391,8 +391,8 @@ shinyUI(
 							, "population size" = "population"
 							, "population density" = "density"
 							, "standard GDP" = "GDPc")
-							,selected = "visit1"),
-						p("For more information, visit ",a("Gondar's Way",href="http://gondar.tk"))
+							,selected = "visit1")
+						
 					)
 				)
 			),
@@ -434,8 +434,8 @@ shinyUI(
 							choices = list("barplot visited countries per region" = "barVisit"
 							, "barplot number of days per country / region" = "barDays"
 							, "table of visited countries per regions" = "myTable")
-							,selected = "barVisit"),
-						p("For more information, visit ",a("Gondar's Way",href="http://gondar.tk"))
+							,selected = "barVisit")
+					
 					)
 				)
 			)
